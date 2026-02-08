@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture — 도서 검색</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Culture</h1>
+      <p class="subtitle">도서 검색 → Notion 저장</p>
+    </header>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="책 제목, 저자를 검색하세요..."
+        autocomplete="off"
+      >
+      <button id="searchBtn">검색</button>
+    </div>
+
+    <div id="results" class="results"></div>
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
