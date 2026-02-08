@@ -56,8 +56,7 @@ function renderBooks(books) {
       : `<div class="book-thumb no-img">No Image</div>`;
 
     const authorsStr = book.authors?.join(", ") || "저자 미상";
-    const year = book.datetime ? new Date(book.datetime).getFullYear() : "";
-    const metaParts = [book.publisher, year].filter(Boolean).join(" · ");
+    const metaParts = [book.publisher, book.publishedDate].filter(Boolean).join(" · ");
 
     card.innerHTML = `
       ${thumbHtml}
